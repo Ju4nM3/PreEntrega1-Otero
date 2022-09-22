@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from './navbar/CartWidget';
 import Sections from './navbar/Sections';
 
 
@@ -12,9 +13,12 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
             <ul className="navbar-nav me-auto container ">
-              <div className="row">
-                <div className="col-12 d-flex">
+              <div className="row w-100">
+                <div className="col-10 d-flex justify-content-center">
                   <Sections/>
+                </div>
+                <div className="col-2 d-flex justify-content-center">
+                  <CartWidget/>
                 </div>
               </div>             
             </ul>
