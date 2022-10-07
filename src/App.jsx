@@ -1,18 +1,26 @@
-import React from 'react';
-import Navbar from './components/Navbar'
-import Brand from './components/Brand';
-import ItemListContainer from './components/ItemListContainer';
-import './App.css';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import './styles/App.css';
+import Navbar from './components/content/Navbar'
+import Home from './components/content/Home'
+import Product from './components/content/Product'
+import Cart from './components/content/Cart'
+import About from './components/content/About'
+import Contact from './components/content/Contact'
 
 
 const App = () => {
-  const features=["Característica 1", "Característica 2", "Característica 3", "Característica 4"];
   return (
     <>
-      <Brand/>
-      <Navbar/>
-      <ItemListContainer productName="Artículo" productValue="Precio" productDescription="Acá va una pequeña descripción del producto" productFeatures={features} />
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/product/:id" element={<Product/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>    
+      </BrowserRouter>
     </>
   );
 }

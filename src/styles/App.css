@@ -7,3 +7,12 @@
 .navbar-brand {
   border: none;
 }
+
+.cardProduct {
+  width: 18rem;
+  margin: 4px;
+}
+
+.nav-link{
+  border-right: none;
+}

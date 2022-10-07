@@ -1,4 +1,3 @@
-import React from 'react';
 import DropdownCategories from './DropdownCategories';
 
 const Dropdown = () => {

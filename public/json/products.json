@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "product": "Notebook Asus Zephyrus",
+    "model": "G14 GA401Q",
+    "firstFeature": "Ryzen 9-4900HS",
+    "secondFeature": "16Gb",
+    "thirdFeature": "RTX2060",     
+    "value": "409.000",
+    "img": "notebook-asus.jpeg"
+  },
+  {
+    "id": 2,
+    "product": "Notebook Gamer Gigabyte Aorus",
+    "model": "17G",
+    "firstFeature": "I7 11800H",
+    "secondFeature": "32Gb",
+    "thirdFeature": "RTX3080Q",     
+    "value": "579.999",
+    "img": "notebook-aorus.jpeg"
+  },
+  {
+    "id": 3,
+    "product": "Motherboard Gygabyte 12°Gen",
+    "model": "GA-Z690 Aorus Pro",
+    "firstFeature": "DDR4", 
+    "secondFeature": "Nada",
+    "thirdFeature": "Nada",
+    "value": "86.999",
+    "img": "mother-intel.jpeg"
+  },
+  {
+    "id": 4,
+    "product": "Motherboard AM4 - Gygabyte",
+    "model": "GA-X570S Aorus Elite",
+    "firstFeature": "DDR4", 
+    "secondFeature": "Nada",
+    "thirdFeature": "Nada",
+    "value": "84.999",
+    "img": "mother-amd.jpeg"
+  },
+  {
+    "id": 5,
+    "product": "NVIDIA GeForce RTX 3090",
+    "model": "Rog Strix Gaming Oc RTX 3090",
+    "firstFeature": "GDDR6X 24Gb", 
+    "secondFeature": "3 Coolers",
+    "thirdFeature": "PCIe 4.0",
+    "value": "499.999",
+    "img": "video-nvidia.jpeg"
+  },
+  {
+    "id": 6,
+    "product": "AMD Radeon RX 6900",
+    "model": "Radeon RX 6900 XT Gaming",
+    "firstFeature": "GDDR6X 16Gb", 
+    "secondFeature": "3 Coolers",
+    "thirdFeature": "PCIe 4.0 16X",
+    "value": "254.999",
+    "img": "video-amd.jpeg"
+  },
+  {
+    "id": 7,
+    "product": "Intel Core I9",
+    "model": "I9-12900KF",
+    "firstFeature": "LGA1700", 
+    "secondFeature": "5.2Ghz",
+    "thirdFeature": "16 Núcleos",
+    "value": "149.129",
+    "img": "procesador-intel.jpeg"
+  },
+  {
+    "id": 8,
+    "product": "AMD Ryzen 9",
+    "model": "Ryzen 9 7900X",
+    "firstFeature": "AM5", 
+    "secondFeature": "5.6Ghz",
+    "thirdFeature": "12 Núcleos",
+    "value": "142.999",
+    "img": "procesador-amd.jpeg"
+  },
+  {
+    "id": 9,
+    "product": "Zowie 24' 240Hz",
+    "model": "XL2546K",
+    "firstFeature": "240Hz", 
+    "secondFeature": "TN",
+    "thirdFeature": "0.5ms",
+    "value": "158.259",
+    "img": "monitor-zowie.jpeg"
+  },
+  {
+    "id": 10,
+    "product": "Aorus 25' 240Hz",
+    "model": "AORUS FI25F",
+    "firstFeature": "240Hz", 
+    "secondFeature": "IPS",
+    "thirdFeature": "0.4ms",
+    "value": "146.959",
+    "img": "monitor-aorus.jpeg"
+  }
+]
