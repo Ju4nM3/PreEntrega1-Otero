@@ -1,20 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import Form from './Form';
 
 const Brand = () => {
   return (
     <>
-      <div className='container w-75 my-5'>
-        <div className='row'>
-          <div className="col-2 d-flex align-items-center justify-content-center  text-center">
-            <Link className="navbar-brand" to="/">Ju4nM3<br/>Componentes</Link>
-          </div>
-          <div className='col-10 d-flex align-items-center justify-content-center'>
-            <Form SearchingPlaceholder="Buscar Producto o Marca"/>
-          </div>
+      <Link className="navbar-brand" to="/">
+        <div className='container-fluid text-center p-0'>
+          <p className='logo text-light'>Ju<span className='logo-span-4 text-danger'>4</span>nM<span className='logo-span-3 text-danger'>3</span></p>
+          <p className='slogan text-danger'>Gamers never quit a game</p>
         </div>
-      </div>
+        
+      </Link>
     </>
   );
 }

@@ -1,35 +1,35 @@
 import React, {useState, useEffect} from 'react';
-import Product from './Product';
 import { Link } from "react-router-dom"
+import { dbConsult } from '../../utilFunctions/utilFunctions';
 
 const Home = () => {
 
   const [products, setProducts] = useState([]);
-  useEffect(() => {
-    const visualizeProducts = async () => {
-      const response = await fetch('./json/products.json')
-      const products = await response.json()
+   useEffect(() => {
+    dbConsult("./json/products.json").then(products => {
       const cardProduct = products.map(product =>
         <div className="card mb-3 cardProduct p-0" key={product.id}>
           <img src={"./img/" + product.img} alt={product.product} className="img-fluid p-0 rounded p-1" />
-          <div className="card-body">
+          <div className="card-body text-center">
             <h6 className="card-title">{product.product}</h6>
             <h6 className="card-subtitle text-muted">{product.model}</h6>
           </div>
-          <button className='btn btn-dark'><Link to={"/product/" + product.id}>Comprar producto</Link></button>
+          <Link to={"/product/" + product.id}><button className='btn btn-dark w-100 border-0'>Ver producto</button></Link>
         </div>
       )
-      return cardProduct
-    } 
-    visualizeProducts().then(products => setProducts(products))  
+      setProducts(cardProduct)
+   })  
   }, []);
 
 
-
   return (
-    <div className='row container-fluid d-flex'>
-      {products}
-    </div>
+    <>
+      <div className='container-fluid d-flex justify-content-center my-3'>
+        <div className='row container-fluid d-flex ms-4'>
+          {products}
+        </div>
+      </div>
+    </>
       
   );
 }

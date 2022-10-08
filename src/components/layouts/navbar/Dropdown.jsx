@@ -1,22 +1,18 @@
-import DropdownCategories from './DropdownCategories';
+import DropdownCategory from './DropdownCategory';
 
 const Dropdown = () => {
   return (
     <>
-      <li className="nav-item dropdown position-static">
-        <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
-        <div className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start mt-0">
-          <div className="px-md-4">
-            <div className="container-fluid ">
-              <div className="row">
-                <DropdownCategories firstCategorie="Notebooks" secondCategorie="PC's All in One" thirdCategorie="Motherboards" fourthCategorie="Procesadores"/>
-                <DropdownCategories firstCategorie="Memorias Ram" secondCategorie="Almacenamiento" thirdCategorie="Placas de Video" fourthCategorie="Fuentes de Poder"/>
-                <DropdownCategories firstCategorie="Gabinetes" secondCategorie="Monitores" thirdCategorie="Periféricos" fourthCategorie="Refrigeración PC"/>
-              </div>
+      <a className="nav-link dropdown-toggle border-0 text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+      <div className="dropdown-menu position-absolute start-50 translate-middle-x">
+        <div className="px-md-4">
+          <div className="container d-flex">
+            <div className="row container-fluid d-flex justify-content-center">
+              <DropdownCategory/>
             </div>
           </div>
         </div>
-      </li>
+      </div>
     </>
   );
 }

@@ -1,14 +1,10 @@
-import Form from "../layouts/Form";
-import Brand from "../layouts/Brand"
-import CartWidget from "../layouts/navbar/CartWidget";
-import Sections from "../layouts/navbar/Sections";
+import Sections from "../layouts/Navbar/Sections";
 
 
 const Navbar = () => {
   return (
     <>
-      <Brand/>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient container-fluid">
         <div className="container-fluid ">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
@@ -22,9 +18,6 @@ const Navbar = () => {
                 <div className="col-2 d-flex justify-content-center">
                 </div>
               </div>
-            </ul>
-            <ul className="navbar-nav me-auto container-fluid w-25">
-              <li className="nav-item d-flex align-items-center"><CartWidget /></li>
             </ul>
           </div>
         </div>

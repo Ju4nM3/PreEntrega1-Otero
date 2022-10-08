@@ -1,23 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom"
-import ProductDetail from './ProductDetail';
+import { dbConsult } from '../../utilFunctions/utilFunctions';
+import ItemDetailContainer from './ItemDetailContainer';
 
 export const Product = () => {
 const [product, setProduct] = useState([]);
 const {id} = useParams()
 
 useEffect(() => {
-  fetch('../json/products.json')
-  .then(response => response.json())
-  .then(productos => {
-    const product1 = productos.find(productoArray => productoArray.id == id)
-    setProduct(product1)
+  dbConsult("../json/products.json").then(products => {
+    const product = products.find(productoArray => productoArray.id == id)
+    setProduct(product)
   })
 }, []);
 
   return (
     <>
-      <ProductDetail product={product}/> 
+      <ItemDetailContainer product={product}/> 
     </>
   );
 }

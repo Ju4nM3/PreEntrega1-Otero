@@ -16,14 +16,11 @@ const ProductDetail = ({product}) => {
             </div>
             <div className='card-body'>
               <ul>
-              <h6 className=''>Especificación:</h6>
-              <li className="py-1"><p className="card-text">{product.firstFeature}</p></li>
-              <li className="py-1"><p className="card-text">{product.secondFeature}</p></li>
-              <li className="py-1"><p className="card-text">{product.thirdFeature}</p></li>
-              
-              
+                <h6 className=''>Especificación:</h6>
+                <li className="py-1"><p className="card-text">{product.firstFeature}</p></li>
+                <li className="py-1"><p className="card-text">{product.secondFeature}</p></li>
+                <li className="py-1"><p className="card-text">{product.thirdFeature}</p></li> 
               </ul>
-              
             </div>
           </div>
         </div>
