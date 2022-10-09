@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom"
 import { dbConsult } from '../../utilFunctions/utilFunctions';
+import Carrousel from '../layouts/Carrousel';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
 
   return (
     <>
+    <Carrousel/>
       <div className='container-fluid d-flex justify-content-center my-3'>
         <div className='row container-fluid d-flex ms-4'>
           {products}
